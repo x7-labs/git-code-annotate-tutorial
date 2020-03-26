@@ -1,0 +1,16 @@
+
+#
+# Configuration for the git-code-annoate tool 
+#
+config:
+# When doing annotations the "untouched" code is normally on a different branch
+# e.g. the master branch and the annotation tool is being run on an annotation branch
+# that is expected to be the currently checked out branch. All changes on the 
+# annotation branch are considered annotations.. unless the commit message starts the word
+# "dev". This allows to commit changes to this script or the outout of this script 
+# into the annotation branch
+    branch_under_review: origin/master
+
+# When generating rst code links are greated to the original source code that is expected
+# to be hosted somewhere. base_url gets concatnated with the modified file
+    base_url: "https://github.com/x7-labs/git-code-annotate-tutorial/blob/master/"
