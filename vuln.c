@@ -6,6 +6,21 @@
 #define BUF_SIZE	1024
 #define TEST_STR	"test"
 
+/*
+Unsafe use of strcmp
+--------------------
+
+The code listed here uses the strcmp function on a user provided input. Using strmp
+is generally considered unsafe see `strcmp <http://no.more.strmp.org>`_
+
+
+.. code-block:: c
+
+	void parse(char *buf) {
+		if (strcmp(buf, TEST_STR))
+			printf("parsed test\n");
+	}
+*/
 void parse(char *buf) {
 	if (strcmp(buf, TEST_STR))
 		printf("parsed test\n");
