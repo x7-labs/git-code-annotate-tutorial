@@ -7,6 +7,11 @@
 #define TEST_STR	"test"
 
 void parse(char *buf) {
+	/*
+	 * Issue: unsafe use of strcmp
+	 *    The code listed here uses the strcmp function on a user provided input. Using strmp
+	 *    is generally considered unsafe see `strcmp <http://no.more.strmp.org>`_
+	 */
 	if (strcmp(buf, TEST_STR))
 		printf("parsed test\n");
 }
