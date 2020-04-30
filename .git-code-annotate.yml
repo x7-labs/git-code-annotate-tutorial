@@ -7,7 +7,7 @@ config:
 # When doing annotations the "untouched" code is normally on a different branch
 # e.g. the master branch and the annotation tool is being run on an annotation branch
 # that is expected to be the currently checked out branch.
-    branch_under_review: origin/master
+    branch_under_review: origin/annotation_config
 
 # When generating code links are greated to the original source code that is expected
 # to be hosted somewhere. base_url gets concatnated with the name of the modified file
