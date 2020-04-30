@@ -12,7 +12,7 @@ config:
 # When generating code links are greated to the original source code that is expected
 # to be hosted somewhere. base_url gets concatnated with the name of the modified file
     base_url: "https://github.com/x7-labs/git-code-annotate-tutorial/blob/master/"
-    annotation_url: "https://github.com/x7-labs/git-code-annotate-tutorial/demo/blob/"
+    annotation_url: "https://github.com/x7-labs/git-code-annotate-tutorial/annotation_demo/blob/"
 
 # if tags_only is set to true only accept tag:value contents (no free form)
     tags_only: True
