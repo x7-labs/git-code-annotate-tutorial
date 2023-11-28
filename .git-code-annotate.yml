@@ -3,16 +3,16 @@
 # https://github.com/x7-labs/git-code-annotate
 #
 config:
-    version: 9
+    version: 10
 # When doing annotations the "untouched" code is normally on a different branch
 # e.g. the master branch and the annotation tool is being run on an annotation branch
 # that is expected to be the currently checked out branch.
-    branch_under_review: origin/annotation_config
+    branch_under_review: origin/master
 
 # When generating code links are greated to the original source code that is expected
 # to be hosted somewhere. base_url gets concatnated with the name of the modified file
     base_url: "https://github.com/x7-labs/git-code-annotate-tutorial/blob/master/"
-    annotation_url: "https://github.com/x7-labs/git-code-annotate-tutorial/annotation_demo/blob/"
+    annotation_url: "https://gitlab.com/myuser/annotation-tool/-/blob/annotations/"
 
 # if tags_only is set to true only accept tag:value contents (no free form)
     tags_only: True
